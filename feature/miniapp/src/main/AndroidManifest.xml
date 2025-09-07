@@ -33,20 +33,20 @@
             android:name=".blockchain.BlockchainActivity"
             android:process=":blockchain"
             android:exported="false"
-            android:theme="@style/Theme.AnamWallet" />
+            android:theme="@style/Theme.BusanWallet" />
             
         <!-- 일반 WebApp Activity (앱 프로세스) -->
         <activity
             android:name=".webapp.WebAppActivity"
             android:process=":app"
             android:exported="false"
-            android:theme="@style/Theme.AnamWallet" />
+            android:theme="@style/Theme.BusanWallet" />
             
         <!-- QR 스캐너 Activity (메인 프로세스) -->
         <activity
             android:name=".qrscanner.ui.QRScannerActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AnamWallet" />
+            android:theme="@style/Theme.BusanWallet" />
     </application>
 </manifest>

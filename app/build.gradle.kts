@@ -7,15 +7,15 @@ plugins {
 }
 
 android {
-    namespace = "com.anam145.wallet"
+    namespace = "com.busan.wallet"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.anam145.wallet"
+        applicationId = "com.busan.wallet"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0-busan"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -52,7 +52,6 @@ dependencies {
     implementation(project(":feature:main"))
     implementation(project(":feature:hub"))
     implementation(project(":feature:browser"))
-    implementation(project(":feature:identity"))
     implementation(project(":feature:settings"))
     implementation(project(":feature:miniapp"))
     implementation(project(":feature:auth"))

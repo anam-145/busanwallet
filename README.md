@@ -1,4 +1,4 @@
-# ANAM Wallet V2 - Modular Wallet Platform
+# Busan Wallet - Digital Wallet Platform
 
 > **Next-Generation Modular Blockchain Wallet Platform**  
 > An Android-based modular wallet that enables integrated management of various blockchains and services in a single wallet.

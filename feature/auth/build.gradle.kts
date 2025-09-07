@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anam145.wallet.feature.auth"
+    namespace = "com.busan.wallet.feature.auth"
     compileSdk = 34
 
     defaultConfig {
@@ -70,7 +70,6 @@ dependencies {
     implementation(project(":core:common"))
     implementation(project(":core:ui"))
     implementation(project(":core:security"))
-    implementation(project(":feature:identity"))
     
     // Testing
     testImplementation(libs.junit)

@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anam145.wallet.core.ui"
+    namespace = "com.busan.wallet.core.ui"
     compileSdk = 34
 
     defaultConfig {

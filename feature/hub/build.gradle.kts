@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anam145.wallet.feature.hub"
+    namespace = "com.busan.wallet.feature.hub"
     compileSdk = 34
 
     defaultConfig {

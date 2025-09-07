@@ -19,7 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AnamWallet"
+rootProject.name = "BusanWallet"
 include(":app")
 
 // Core modules
@@ -32,7 +32,6 @@ include(":core:security")
 include(":feature:main")
 include(":feature:hub")
 include(":feature:browser")
-include(":feature:identity")
 include(":feature:settings")
 include(":feature:miniapp")
 include(":feature:auth")

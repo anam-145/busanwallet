@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".AnamWalletApplication"
+        android:name=".BusanWalletApplication"
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,13 +14,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AnamWallet.Starting"
+        android:theme="@style/Theme.BusanWallet.Starting"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AnamWallet.Starting">
+            android:theme="@style/Theme.BusanWallet.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +30,7 @@
         
         <!-- VP/Credential Service (Main 프로세스) -->
         <service
-            android:name="com.anam145.wallet.feature.miniapp.webapp.data.service.CredentialService"
+            android:name="com.busan.wallet.feature.miniapp.webapp.data.service.CredentialService"
             android:exported="false" />
             
     </application>

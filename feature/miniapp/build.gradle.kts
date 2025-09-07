@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anam145.wallet.feature.miniapp"
+    namespace = "com.busan.wallet.feature.miniapp"
     compileSdk = 35
 
     defaultConfig {
@@ -51,7 +51,6 @@ dependencies {
     implementation(project(":core:ui"))
     implementation(project(":core:security"))
     implementation(project(":feature:auth"))
-    implementation(project(":feature:identity"))
     
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
