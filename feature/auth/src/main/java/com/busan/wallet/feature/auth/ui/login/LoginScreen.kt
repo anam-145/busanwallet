@@ -110,7 +110,7 @@ private fun LoginContent(
             // 앱 로고/아이콘
             Image(
                 painter = painterResource(id = AuthR.drawable.logo),
-                contentDescription = "ANAM Logo",
+                contentDescription = "Busan Wallet Logo",
                 modifier = Modifier.size(100.dp)
             )
             

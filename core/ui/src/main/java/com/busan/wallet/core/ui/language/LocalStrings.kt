@@ -21,7 +21,6 @@ data class Strings(
     val headerTitleMain: String = "Busan Wallet",
     val headerTitleHub: String = "허브",
     val headerTitleBrowser: String = "웹뷰",
-    val headerTitleIdentity: String = "디지털 신분증",
     val headerTitleSettings: String = "설정",
     
     // Bottom Navigation
@@ -49,14 +48,7 @@ data class Strings(
     val settingsLanguageKorean: String = "한국어",
     val settingsLanguageEnglish: String = "English",
     
-    // Feature Screen Messages
-    val mainScreenTitle: String = "홈 대시보드",
-    val hubScreenTitle: String = "허브 화면",
-    val browserScreenTitle: String = "브라우저",
-    val identityScreenTitle: String = "디지털 신분증 화면",
-    
     // Browser Screen
-    val browserUrlPlaceholder: String = "URL 입력 또는 검색",
     val browserSearchPlaceholder: String = "검색어 또는 주소 입력",
     val cancel: String = "취소",
     val browserSearchDuckDuckGo: String = "DuckDuckGo에서 검색",
@@ -67,40 +59,25 @@ data class Strings(
     val browserDeleteBookmarkTitle: String = "북마크 삭제",
     val browserDeleteBookmarkMessage: String = "%s을(를) 북마크에서 삭제하시겠습니까?",
     val browserPageLoadError: String = "페이지를 불러올 수 없습니다",
-    val browserGoBack: String = "뒤로 가기",
-    val browserGoForward: String = "앞으로 가기",
-    val browserReload: String = "새로고침",
-    val browserHome: String = "홈",
     val browserCancel: String = "취소",
     val browserDelete: String = "삭제",
     
-    // Main Screen
-    val mainSectionBlockchain: String = "블록체인",
-    val mainSectionApps: String = "앱",
-    val mainAddMoreServices: String = "더 많은 서비스 보기",
-    val mainNoAppsInstalled: String = "설치된 앱이 없습니다",
-    val mainNoBlockchainsInstalled: String = "설치된 블록체인이 없습니다",
-    val mainEmptyStateTitle: String = "부산 월렛에 오신 것을 환영합니다",
-    val mainEmptyStateTitleBusan: String = "부산 월렛에 오신 것을 환영합니다",
-    val mainEmptyStateDescription: String = "하단의 허브 탭에서 앱과 블록체인을 추가할 수 있습니다",
+    // Main Screen - Busan Specific
     val syncingApps: String = "앱을 준비 중입니다...",
+    val busanServices: String = "부산 서비스",
+    val mainAddMoreServices: String = "더 많은 서비스 보기",
+    val blockchainSwitch: String = "블록체인 전환",
+    val installBlockchainHint: String = "블록체인을 설치해주세요",
+    val activated: String = "활성화됨",
+    val changeCurrentBlockchain: String = "현재 블록체인을 변경합니다",
+    val noBlockchain: String = "No Blockchain",
+    val viewDetail: String = "상세보기",
+    val noServicesInstalled: String = "설치된 서비스가 없습니다",
+    val addServicesHint: String = "아래 버튼을 눌러 서비스를 추가하세요",
     
     // Common
     val back: String = "뒤로가기",
-    val loading: String = "로딩 중...",
-    val activated: String = "활성화됨",
-    val active: String = "활성",
-    val balance: String = "잔액",
-    val viewDetail: String = "상세보기",
-    
-    // Busan Skin
-    val blockchainSwitch: String = "블록체인 전환",
-    val changeCurrentBlockchain: String = "현재 블록체인을 변경합니다",
-    val busanServices: String = "부산 서비스",
-    val noServicesInstalled: String = "설치된 서비스가 없습니다",
-    val addServicesHint: String = "아래 버튼을 눌러 서비스를 추가하세요",
-    val installBlockchainHint: String = "블록체인을 설치해주세요",
-    val noBlockchain: String = "No Blockchain",
+    val dismiss: String = "닫기",
     
     // Auth - Login Screen
     val loginTitle: String = "비밀번호를 입력하여 지갑에 접근하세요",
@@ -110,7 +87,6 @@ data class Strings(
     val loginPasswordShow: String = "비밀번호 보기",
     val loginUnlockButton: String = "잠금 해제",
     val loginForgotPassword: String = "비밀번호를 잊으셨나요? 앱을 재설치해야 합니다.",
-    val loginPasswordMismatch: String = "비밀번호가 일치하지 않습니다",
     
     // Auth - Setup Password Screen
     val setupPasswordTitle: String = "비밀번호 설정",
@@ -132,60 +108,11 @@ data class Strings(
     val authErrorPasswordMismatch: String = "비밀번호가 일치하지 않습니다",
     val authErrorLoginFailed: String = "로그인 중 오류가 발생했습니다",
     val authErrorPasswordSetupFailed: String = "비밀번호 설정 중 오류가 발생했습니다",
-    val authErrorDIDCreationFailed: String = "디지털 신원 생성에 실패했습니다. 네트워크 연결을 확인해주세요.",
-    
-    // Skin
-    val settingsSkinSection: String = "스킨",
-    val skinSeoul: String = "서울",
-    val skinBusan: String = "부산",
-    val skinLA: String = "LA",
     
     // Service Connection
     val serviceDisconnected: String = "서비스 연결 끊김",
     val retry: String = "재연결",
     val tryAgain: String = "다시 시도",
-    
-    // Identity (DID) Screen
-    val identityMobileDriverLicense: String = "모바일 운전면허증",
-    val identityMobileStudentId: String = "모바일 학생증",
-    val identityEligibility: String = "발급대상",
-    val identityRequirements: String = "준 비 물",
-    val identityDriverEligibility: String = "1종, 2종 자동차운전면허 소지자",
-    val identityStudentEligibility: String = "고려대학교 재학생",
-    val identityNoRequirements: String = "없음(홍길동으로 발급)",
-    val identityInquire: String = "조회하기",
-    
-    // Identity Detail Screens
-    val identityRefresh: String = "새로고침",
-    val identityPhoto: String = "사진",
-    val identityEnlarge: String = "크게보기",
-    val identityQRScan: String = "QR을 태하여\n카메라에 스캔하세요.",
-    val identityKoreaUniversity: String = "고려대학교",
-    val identityGraduateSchool: String = "Student ID",
-    val identityFinancialSecurity: String = "금융보안학과",
-    val identityBlockchainMajor: String = "블록체인전공",
-    val identityRepublicOfKorea: String = "대한민국",
-    val identityDriversLicense: String = "자동차운전면허증",
-    val identityLicenseType: String = "종류",
-    val identityClass1Regular: String = "제1종 보통",
-    val identityIssueDate: String = "발급일",
-    val identityAptitudeTest: String = "적성검사",
-    val identityRenewal: String = "갱신기간",
-    val identityMyIds: String = "내 신분증",
-    val identityAddId: String = "신분증 추가",
-    val identityIssueNewId: String = "발급하기",
-    val identityIssueId: String = "신분증 발급",
-    val identityValid: String = "유효",
-    val identityStudentIdCard: String = "학생증",
-    val identityDriverLicenseCard: String = "운전면허증",
-    val identityIssueStudentId: String = "홍길동\n고려대 학생증\n발급하기",
-    val identityIssueDriverLicense: String = "홍길동\n운전면허증\n발급하기",
-    val identityViewDetail: String = "상세보기",
-    val identitySampleName: String = "홍길동",
-    val identityIssued: String = "발급완료",
-    val identityAllIssued: String = "모든 신분증이 발급되었습니다.",
-    val identityNoIssuedIds: String = "발급된 모바일 신분증이 없습니다.",
-    val dismiss: String = "닫기",
     
     // Help Screen
     val helpTitle: String = "도움말",
@@ -197,7 +124,7 @@ data class Strings(
     val helpBlockchainContent: String = "메인 화면에서 원하는 블록체인 지갑(Bitcoin, Ethereum 등)을 선택하면 해당 지갑으로 이동합니다. 각 지갑에서는 잔액 확인, 송금, 수신 주소 생성 등의 기능을 사용할 수 있습니다. 활성 블록체인은 상단 헤더에 표시되며, 탭하여 빠르게 전환할 수 있습니다.",
     val helpBrowserTitle: String = "웹 브라우저",
     val helpBrowserContent: String = "하단 네비게이션의 '브라우저' 탭을 통해 웹사이트와 DApp에 접근할 수 있습니다. 북마크 기능을 지원하며, 자주 방문하는 사이트를 저장하여 빠르게 접속할 수 있습니다.",
-    val helpLanguageTitle: String = "언어 및 스킨 변경",
+    val helpLanguageTitle: String = "언어 변경",
     val helpLanguageContent: String = "설정' 탭에서 앱의 언어(한국어/English)를 변경할 수 있습니다.",
     
     // FAQ Screen
@@ -242,11 +169,10 @@ data class Strings(
  */
 val EnglishStrings = Strings(
     // Header
-    headerTitle = "Anam Wallet",
-    headerTitleMain = "Anam Wallet",
+    headerTitle = "Busan Wallet",
+    headerTitleMain = "Busan Wallet",
     headerTitleHub = "Hub",
     headerTitleBrowser = "WebView",
-    headerTitleIdentity = "Digital ID",
     headerTitleSettings = "Settings",
     
     // Bottom Navigation
@@ -267,21 +193,14 @@ val EnglishStrings = Strings(
     settingsFaqDescription = "Check frequently asked questions",
     
     settingsAppInfo = "App Info",
-    settingsAppInfoDescription = "Learn about Anam Wallet",
+    settingsAppInfoDescription = "Learn about Busan Wallet",
     settingsLicense = "License",
     settingsLicenseDescription = "Open source license information",
     
     settingsLanguageKorean = "한국어",
     settingsLanguageEnglish = "English",
     
-    // Feature Screen Messages
-    mainScreenTitle = "Home Dashboard",
-    hubScreenTitle = "Hub Screen",
-    browserScreenTitle = "Browser",
-    identityScreenTitle = "Digital ID Screen",
-    
     // Browser Screen
-    browserUrlPlaceholder = "Enter URL or search",
     browserSearchPlaceholder = "Search or enter address",
     cancel = "Cancel",
     browserSearchDuckDuckGo = "Search on DuckDuckGo",
@@ -292,61 +211,45 @@ val EnglishStrings = Strings(
     browserDeleteBookmarkTitle = "Delete Bookmark",
     browserDeleteBookmarkMessage = "Delete %s from bookmarks?",
     browserPageLoadError = "Unable to load page",
-    browserGoBack = "Go back",
-    browserGoForward = "Go forward",
-    browserReload = "Reload",
-    browserHome = "Home",
     browserCancel = "Cancel",
     browserDelete = "Delete",
     
-    // Main Screen
-    mainSectionBlockchain = "Blockchain",
-    mainSectionApps = "Apps",
-    mainAddMoreServices = "View more services",
-    mainNoAppsInstalled = "No apps installed",
-    mainNoBlockchainsInstalled = "No blockchains installed",
-    mainEmptyStateTitle = "Welcome to Busan Wallet",
-    mainEmptyStateTitleBusan = "Welcome to Busan Wallet",
-    mainEmptyStateDescription = "You can add apps and blockchains from the Hub tab below",
+    // Main Screen - Busan Specific
     syncingApps = "Preparing apps...",
+    busanServices = "Busan Services",
+    mainAddMoreServices = "View More Services",
+    blockchainSwitch = "Switch Blockchain",
+    installBlockchainHint = "Please install a blockchain",
+    activated = "Activated",
+    changeCurrentBlockchain = "Change current blockchain",
+    noBlockchain = "No Blockchain",
+    viewDetail = "View Detail",
+    noServicesInstalled = "No services installed",
+    addServicesHint = "Press the button below to add services",
     
     // Common
     back = "Back",
-    loading = "Loading...",
-    activated = "Activated",
-    active = "Active",
-    balance = "Balance",
-    viewDetail = "View Details",
-    
-    // Busan Skin
-    blockchainSwitch = "Switch Blockchain",
-    changeCurrentBlockchain = "Change the current blockchain",
-    busanServices = "Busan Services",
-    noServicesInstalled = "No services installed",
-    addServicesHint = "Press the button below to add services",
-    installBlockchainHint = "Please install a blockchain",
-    noBlockchain = "No Blockchain",
+    dismiss = "Dismiss",
     
     // Auth - Login Screen
-    loginTitle = "Enter password to access your wallet",
+    loginTitle = "Enter password to access wallet",
     loginPasswordLabel = "Password",
     loginPasswordPlaceholder = "At least 8 characters",
     loginPasswordHide = "Hide password",
     loginPasswordShow = "Show password",
     loginUnlockButton = "Unlock",
     loginForgotPassword = "Forgot password? You need to reinstall the app.",
-    loginPasswordMismatch = "Password does not match",
     
     // Auth - Setup Password Screen
     setupPasswordTitle = "Set Password",
-    setupPasswordDescription = "Set a password to protect your wallet.\nThis password will be required to access the app.",
+    setupPasswordDescription = "Set a password to protect your wallet.\nThis password is required every time you access the app.",
     setupPasswordLabel = "Password",
     setupPasswordPlaceholder = "Enter at least 8 characters",
     setupPasswordConfirmLabel = "Confirm Password",
-    setupPasswordConfirmPlaceholder = "Re-enter your password",
-    setupPasswordMatch = "Password match",
+    setupPasswordConfirmPlaceholder = "Re-enter password",
+    setupPasswordMatch = "Passwords match",
     setupPasswordButton = "Set Password",
-    setupPasswordWarningTitle = "Warning",
+    setupPasswordWarningTitle = "Important",
     setupPasswordWarningContent = "• If you forget your password, you cannot access your wallet\n• Reinstalling the app will delete all data",
     setupPasswordStrengthWeak = "Weak",
     setupPasswordStrengthMedium = "Medium",
@@ -355,103 +258,54 @@ val EnglishStrings = Strings(
     // Auth - Error Messages
     authErrorPasswordTooShort = "Password must be at least 8 characters",
     authErrorPasswordMismatch = "Passwords do not match",
-    authErrorLoginFailed = "An error occurred during login",
-    authErrorPasswordSetupFailed = "An error occurred while setting password",
-    authErrorDIDCreationFailed = "Failed to create digital identity. Please check your network connection.",
-    
-    // Skin
-    settingsSkinSection = "Skin",
-    skinSeoul = "Seoul",
-    skinBusan = "Busan",
-    skinLA = "LA",
+    authErrorLoginFailed = "Login failed",
+    authErrorPasswordSetupFailed = "Failed to set password",
     
     // Service Connection
-    serviceDisconnected = "Service connection lost",
-    retry = "Retry",
-    tryAgain = "Try again",
-    
-    // Identity (DID) Screen
-    identityMobileDriverLicense = "Mobile Driver's License",
-    identityMobileStudentId = "Mobile Student ID",
-    identityEligibility = "Eligibility",
-    identityRequirements = "Requirements",
-    identityDriverEligibility = "Class 1 or 2 driver's license holder",
-    identityStudentEligibility = "Korea University student",
-    identityNoRequirements = "None (Issued to Hong Gildong)",
-    identityInquire = "Inquire",
-    
-    // Identity Detail Screens
-    identityRefresh = "Refresh",
-    identityPhoto = "Photo",
-    identityEnlarge = "Enlarge",
-    identityQRScan = "Scan QR code\nwith camera.",
-    identityKoreaUniversity = "Korea University",
-    identityGraduateSchool = "Student ID",
-    identityFinancialSecurity = "Financial Security",
-    identityBlockchainMajor = "Blockchain Major",
-    identityRepublicOfKorea = "Republic of Korea",
-    identityDriversLicense = "Driver's License",
-    identityLicenseType = "Type",
-    identityClass1Regular = "Class 1 Regular",
-    identityIssueDate = "Issue Date",
-    identityAptitudeTest = "Aptitude Test",
-    identityRenewal = "Renewal",
-    identityMyIds = "My IDs",
-    identityAddId = "Add ID",
-    identityIssueNewId = "Issue New ID",
-    identityIssueId = "Issue New ID",
-    identityValid = "Valid",
-    identityStudentIdCard = "Student ID",
-    identityDriverLicenseCard = "Driver's License",
-    identityIssueStudentId = "Issue\nHong Gildong\nKorea Univ. ID",
-    identityIssueDriverLicense = "Issue\nHong Gildong\nDriver's License",
-    identityViewDetail = "Detail",
-    identitySampleName = "Hong Gildong",
-    identityIssued = "Issued",
-    identityAllIssued = "All IDs have been issued.",
-    identityNoIssuedIds = "No digital IDs have been issued yet.",
-    dismiss = "Dismiss",
+    serviceDisconnected = "Service disconnected",
+    retry = "Reconnect",
+    tryAgain = "Try Again",
     
     // Help Screen
     helpTitle = "Help",
-    helpPasswordTitle = "Setting App Password",
-    helpPasswordContent = "When you first launch Busan Wallet, you need to set a password to protect your app. Set a password with at least 8 characters. This password is required every time you access the app. If lost, you must reinstall the app, so keep it safe.",
-    helpMiniAppTitle = "Installing and Managing Mini-Apps",
-    helpMiniAppContent = "You can install various blockchain wallets and web services from the 'Hub' tab in the bottom navigation. Select the mini-app you want to install and press the 'Install' button to add it to your main screen. Installed mini-apps can be launched directly from the main screen.",
+    helpPasswordTitle = "App Password Setup",
+    helpPasswordContent = "When you first launch Busan Wallet, you need to set a password to protect the app. Set a password of at least 8 characters. This password is required every time you access the app, and if lost, you need to reinstall the app, so please keep it safe.",
+    helpMiniAppTitle = "Installing and Managing Mini Apps",
+    helpMiniAppContent = "You can install various blockchain wallets and web services from the 'Hub' tab at the bottom navigation. Select the mini app you want to install and press the 'Install' button to add it to the main screen. Installed mini apps can be launched directly from the main screen.",
     helpBlockchainTitle = "Using Blockchain Wallets",
-    helpBlockchainContent = "Select your desired blockchain wallet (Bitcoin, Ethereum, etc.) from the main screen to access it. Each wallet provides features like balance checking, sending funds, and generating receiving addresses. The active blockchain is displayed in the header and can be quickly switched by tapping.",
+    helpBlockchainContent = "Select the desired blockchain wallet (Bitcoin, Ethereum, etc.) from the main screen to navigate to that wallet. In each wallet, you can check balance, send funds, generate receiving addresses, and more. The active blockchain is displayed in the header, and you can tap to quickly switch.",
     helpBrowserTitle = "Web Browser",
-    helpBrowserContent = "Access websites and DApps through the 'Browser' tab in the bottom navigation. Bookmark functionality is supported, allowing you to save and quickly access frequently visited sites.",
-    helpLanguageTitle = "Language and Skin Settings",
-    helpLanguageContent = "Change the app's language (Korean/English) in the 'Settings' tab. Different skins come with different default mini-apps and UI themes.",
+    helpBrowserContent = "Access websites and DApps through the 'Browser' tab at the bottom navigation. Bookmark feature is supported, allowing you to save frequently visited sites for quick access.",
+    helpLanguageTitle = "Changing Language",
+    helpLanguageContent = "You can change the app language (Korean/English) in the 'Settings' tab.",
     
     // FAQ Screen
     faqTitle = "FAQ",
-    faqQuestion1 = "What are mini-apps?",
-    faqAnswer1 = "Mini-apps are small applications that run independently within Busan Wallet. You can install and use blockchain wallets (Bitcoin, Ethereum, etc.) and web services (Government24, Busan Card, etc.) as mini-apps. Each mini-app runs in a separate process, ensuring security and stability.",
+    faqQuestion1 = "What is a mini app?",
+    faqAnswer1 = "A mini app is a small application that runs independently within Busan Wallet. You can install and use blockchain wallets (Bitcoin, Ethereum, etc.) and web services (Busan Ilbo, Bion Media, etc.) as mini apps. Each mini app runs in a separate process, ensuring security and stability.",
     faqQuestion2 = "How do I add a new blockchain wallet?",
-    faqAnswer2 = "Go to the 'Hub' tab in the bottom navigation, find the blockchain mini-app you want, and press the 'Install' button. Installed mini-apps appear on the main screen and can be accessed immediately by tapping. You can remove unnecessary mini-apps at any time.",
+    faqAnswer2 = "Find the desired blockchain mini app in the 'Hub' tab at the bottom navigation and press the 'Install' button. Installed mini apps appear on the main screen and can be used immediately by tapping. Unnecessary mini apps can be removed at any time.",
     faqQuestion3 = "I forgot my app password. What should I do?",
-    faqAnswer3 = "For security reasons, the app password cannot be recovered. You must delete and reinstall the app, which will reset all data. Therefore, please keep your password in a safe place.",
+    faqAnswer3 = "For security reasons, the app password cannot be recovered. You need to delete and reinstall the app, which will reset all data. Therefore, please keep your password in a safe place.",
     faqQuestion4 = "Can I use multiple blockchains simultaneously?",
-    faqAnswer4 = "Yes, you can. Busan Wallet is designed with a modular architecture that allows you to install and manage multiple blockchain mini-apps simultaneously. You can check the currently active blockchain in the header and quickly switch by tapping.",
-    faqQuestion5 = "What are skins and how do I change them?",
-    faqAnswer5 = "Mini-app updates can be checked in the Hub. which can be changed in the Settings screen. The Busan skin comes with Busan regional services pre-installed and displays the apps section first.",
-    faqQuestion6 = "How do I know when mini-apps are updated?",
-    faqAnswer6 = "You can check for updates to installed mini-apps in the Hub. If a new version is available, an update button will appear, which you can tap to update to the latest version.",
-    faqQuestion7 = "Can I use the app offline?",
-    faqAnswer7 = "Installed mini-apps can use basic functions offline. However, features that require network access, such as balance checking or transaction sending, need an internet connection.",
+    faqAnswer4 = "Yes, you can. Busan Wallet is designed with a modular structure, allowing you to install and manage multiple blockchain mini apps simultaneously. You can check the currently active blockchain in the header and tap to quickly switch.",
+    faqQuestion5 = "How do I update mini apps?",
+    faqAnswer5 = "You can check for updates of installed mini apps in the Hub. If a new version is available, an update button will appear, which you can tap to update to the latest version.",
+    faqQuestion6 = "Can I use it offline?",
+    faqAnswer6 = "Installed mini apps can use basic functions offline. However, functions that require network such as balance inquiry or transaction sending need internet connection.",
+    faqQuestion7 = "Where are browser bookmarks saved?",
+    faqAnswer7 = "Bookmarks are safely stored within the app. You can add/remove by tapping the bookmark icon at the bottom of the browser, and quickly access saved sites from the bookmark list.",
     
     // App Info Screen
     appInfoTitle = "App Info",
     appInfoVersion = "Version",
-    appInfoDescription = "AnamWallet is a revolutionary cryptocurrency wallet built on user-configurable modularity—its core principle, not just a feature. Users create wallets that fit them perfectly, adding the blockchains they want and removing the ones they don't. No more juggling multiple wallets or waiting on vendor updates.\n\nEngineered for openness, AnamWallet lets anyone build and deploy modules with familiar web standards (HTML, CSS, JavaScript), fueling rapid ecosystem growth.\n\nThis openness is reinforced by absolute security: our patented multi-process isolation runs every module in its own sandboxed process with dedicated memory, while the main process mediates all communication. Even a malicious module can't touch other modules' private keys or data.\n\nBeyond blockchain, AnamWallet supports application modules and Decentralized Identifiers (DID). A unified API ties everything together so any service can interact with blockchains. Authentication and payments flow through one secure interface.\n\nAnamWallet makes Web3 practical—bridging blockchain technology with real-world services.",
+    appInfoDescription = "Busan Wallet is an integrated digital wallet service for Busan citizens. As a fundamental philosophy rather than just a feature, users can add desired blockchains and remove unnecessary ones to create a wallet perfectly suited to them. No more managing multiple wallets or waiting for updates.\n\nDesigned for openness, Busan Wallet allows anyone to create and deploy modules using familiar web standards (HTML, CSS, JavaScript), promoting rapid ecosystem growth.\n\nThis openness is backed by perfect security. With patented multi-process isolation technology, all modules run in independent sandbox processes and dedicated memory, with the main process mediating all communication. Even malicious modules cannot access private keys or data of other modules.\n\nBeyond blockchain, Busan Wallet supports application modules and decentralized identity (DID). A unified API connects everything, allowing any service to interact with blockchain. Authentication and payment occur through a single secure interface.\n\nBusan Wallet makes Web3 practical by connecting blockchain technology with real services.",
     appInfoDeveloper = "Developer",
     appInfoDeveloperName = "Busan Digital Agency",
     appInfoWebsite = "Website",
-    appInfoWebsiteUrl = "https://anamwallet.com",
+    appInfoWebsiteUrl = "https://busanwallet.kr",
     appInfoContact = "Contact",
-    appInfoContactEmail = "support@anamwallet.com",
+    appInfoContactEmail = "support@busanwallet.kr",
     
     // License Screen
     licenseTitle = "Open Source Licenses",
@@ -463,7 +317,7 @@ val EnglishStrings = Strings(
 )
 
 /**
- * 언어에 따른 Strings 객체 반환
+ * 언어에 따른 문자열 제공 함수
  */
 fun getStringsForLanguage(language: Language): Strings {
     return when (language) {

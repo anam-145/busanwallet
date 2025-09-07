@@ -33,9 +33,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.busan.wallet.core.ui.theme.BusanWalletTheme
-import com.busan.wallet.core.ui.theme.AnamSuccess
-import com.busan.wallet.core.ui.theme.AnamError
-import com.busan.wallet.core.ui.theme.AnamWarning
+import com.busan.wallet.core.ui.theme.BusanSuccess
+import com.busan.wallet.core.ui.theme.BusanError
+import com.busan.wallet.core.ui.theme.BusanWarning
 import com.busan.wallet.core.ui.theme.Typography
 import com.busan.wallet.core.ui.theme.CocogooseFamily
 import androidx.compose.foundation.Image
@@ -121,7 +121,7 @@ private fun SetupPasswordContent(
             // 앱 로고
             Image(
                 painter = painterResource(id = AuthR.drawable.logo),
-                contentDescription = "ANAM Logo",
+                contentDescription = "Busan Wallet Logo",
                 modifier = Modifier.size(100.dp)
             )
             
@@ -242,7 +242,7 @@ private fun SetupPasswordContent(
                             Icon(
                                 imageVector = Icons.Default.Check,
                                 contentDescription = strings.setupPasswordMatch,
-                                tint = AnamSuccess,
+                                tint = BusanSuccess,
                                 modifier = Modifier.size(24.dp)
                             )
                         }
@@ -371,9 +371,9 @@ private fun PasswordStrengthIndicator(
     val color by animateColorAsState(
         targetValue = when (strength) {
             SetupPasswordContract.PasswordStrength.NONE -> Color.Transparent
-            SetupPasswordContract.PasswordStrength.WEAK -> AnamError
-            SetupPasswordContract.PasswordStrength.MEDIUM -> AnamWarning
-            SetupPasswordContract.PasswordStrength.STRONG -> AnamSuccess
+            SetupPasswordContract.PasswordStrength.WEAK -> BusanError
+            SetupPasswordContract.PasswordStrength.MEDIUM -> BusanWarning
+            SetupPasswordContract.PasswordStrength.STRONG -> BusanSuccess
         },
         label = "strength_color"
     )

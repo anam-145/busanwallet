@@ -3,7 +3,7 @@ package com.busan.wallet.feature.hub.remote.model
 import com.google.gson.annotations.SerializedName
 
 /**
- * Server response model for mini-app from AnamHub API
+ * Server response model for mini-app from Hub API
  */
 data class HubMiniAppResponse(
     @SerializedName("appId")

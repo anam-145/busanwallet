@@ -69,26 +69,11 @@ val BusanSuccess = Color(0xFF10B981)
 val BusanWarning = Color(0xFFF59E0B)
 
 
-// ========== 레거시 호환성 (ANAM 이름 유지) ==========
-// 기존 코드와의 호환성을 위해 ANAM 이름도 유지
-// 하지만 실제로는 부산 색상을 가리킴
+// ========== 추가 UI 색상 ==========
+// UI 구성에 필요한 추가 색상들
 
-val AnamPrimary = BusanPrimary
-val AnamSecondary = BusanSecondary
-val AnamAqua = BusanTertiary
-val AnamLight = BusanBackground
-val AnamLightSurface = BusanSurface
-val AnamLightBackground = BusanSurfaceVariant
-val AnamTextDark = BusanTextPrimary
-val AnamTextSecondary = BusanTextSecondary
-val AnamLightBorder = BusanOutline
-val AnamError = BusanError
-val AnamWhite = BusanWhite
+/** 회색 - 비활성화, 보더 등 */
+val BusanGray = Color(0xFF777777)
 
-// 추가 레거시 색상들
-val AnamSea = BusanSecondary
-val AnamBlue = BusanPrimary
-val AnamTextGray = Color(0xFF777777)
-val AnamLightGray = Color(0xFF999999)
-val AnamSuccess = BusanSuccess
-val AnamWarning = BusanWarning
+/** 연한 회색 - 힌트, 플레이스홀더 등 */
+val BusanLightGray = Color(0xFF999999)

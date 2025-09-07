@@ -269,7 +269,7 @@ class BlockchainService : Service() {
      */
     private fun createNotification(): Notification {
         return NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("Anam Wallet")
+            .setContentTitle("Busan Wallet")
             .setContentText("블록체인 서비스 실행 중")
             .setSmallIcon(android.R.drawable.ic_dialog_info) // TODO: 실제 아이콘으로 변경
             .setOngoing(true)
