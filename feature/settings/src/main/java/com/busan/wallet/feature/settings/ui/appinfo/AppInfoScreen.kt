@@ -75,7 +75,7 @@ fun AppInfoScreen(
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "A",
+                    text = "B",
                     style = MaterialTheme.typography.displayMedium,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
@@ -86,7 +86,7 @@ fun AppInfoScreen(
             
             // 앱 이름
             Text(
-                text = "ANAM Wallet",
+                text = "BUSAN Wallet",
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurface
@@ -100,7 +100,7 @@ fun AppInfoScreen(
                 color = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.5f)
             ) {
                 Text(
-                    text = "${strings.appInfoVersion} 2.0.0",
+                    text = "${strings.appInfoVersion} 0.0.1",
                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp),
                     style = MaterialTheme.typography.labelLarge,
                     color = MaterialTheme.colorScheme.onSecondaryContainer
