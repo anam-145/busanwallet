@@ -269,7 +269,7 @@ class BlockchainService : Service() {
      */
     private fun createNotification(): Notification {
         return NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("Busan Wallet")
+            .setContentTitle("Anam Wallet")
             .setContentText("블록체인 서비스 실행 중")
             .setSmallIcon(android.R.drawable.ic_dialog_info) // TODO: 실제 아이콘으로 변경
             .setOngoing(true)
@@ -292,20 +292,27 @@ class BlockchainService : Service() {
                 }
                 activeBlockchainWebView = null
                 
-                // JavaScript Bridge 생성
-                val bridge = BlockchainJavaScriptBridge { requestId, responseJson ->
-                    handleBlockchainResponse(requestId, responseJson)
-                }
-                
                 // WebViewFactory를 사용하여 WebView 생성
                 val webView = WebViewFactory.create(
                     context = applicationContext,
                     appId = blockchainId,
                     baseDir = File(fileManager.getMiniAppBasePath(blockchainId)),
                     headless = true,
-                    jsBridge = bridge,
+                    jsBridge = null,  // 나중에 추가
                     enableDebugging = false
                 )
+                
+                // JavaScript Bridge 생성 (onResponse 콜백을 첫 번째 파라미터로)
+                val bridge = BlockchainJavaScriptBridge(
+                    onResponse = { requestId, responseJson ->
+                        handleBlockchainResponse(requestId, responseJson)
+                    },
+                    context = applicationContext,
+                    webView = webView
+                )
+                
+                // Bridge를 WebView에 추가
+                webView.addJavascriptInterface(bridge, "anam")
                 
                 // 블록체인 앱 로드 - manifest에서 페이지 경로 가져오기
                 handler.post {
