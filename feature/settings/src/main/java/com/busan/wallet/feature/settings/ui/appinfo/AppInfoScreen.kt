@@ -1,6 +1,7 @@
 package com.busan.wallet.feature.settings.ui.appinfo
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
@@ -19,7 +20,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.res.painterResource
 import com.busan.wallet.core.ui.language.LocalStrings
+import com.busan.wallet.feature.settings.R as SettingsR
 
 /**
  * 앱 정보 화면
@@ -67,20 +70,11 @@ fun AppInfoScreen(
             Spacer(modifier = Modifier.height(32.dp))
             
             // 앱 로고/아이콘
-            Box(
-                modifier = Modifier
-                    .size(100.dp)
-                    .clip(CircleShape)
-                    .background(MaterialTheme.colorScheme.primaryContainer),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = "B",
-                    style = MaterialTheme.typography.displayMedium,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.onPrimaryContainer
-                )
-            }
+            Image(
+                painter = painterResource(id = SettingsR.drawable.logo),
+                contentDescription = "Busan Wallet Logo",
+                modifier = Modifier.size(100.dp)
+            )
             
             Spacer(modifier = Modifier.height(16.dp))
             

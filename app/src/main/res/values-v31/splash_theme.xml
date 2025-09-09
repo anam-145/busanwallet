@@ -5,7 +5,7 @@
         <item name="windowSplashScreenBackground">@android:color/white</item>
         
         <!-- Use windowSplashScreenAnimatedIcon to add a drawable or animated drawable -->
-        <item name="windowSplashScreenAnimatedIcon">@drawable/busan_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
         
         <!-- Set the theme to be used for the Activity -->
         <item name="postSplashScreenTheme">@style/Theme.BusanWallet</item>
