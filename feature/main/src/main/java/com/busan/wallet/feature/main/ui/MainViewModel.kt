@@ -6,7 +6,6 @@ import androidx.lifecycle.viewModelScope
 import com.busan.wallet.core.common.model.MiniApp
 import com.busan.wallet.core.common.model.MiniAppType
 import com.busan.wallet.core.common.result.MiniAppResult
-import com.busan.wallet.core.common.constants.BusanConstants
 import com.busan.wallet.feature.miniapp.common.domain.usecase.GetInstalledMiniAppsUseCase
 import com.busan.wallet.feature.miniapp.common.domain.usecase.InitializeMiniAppsUseCase
 import com.busan.wallet.feature.miniapp.common.domain.usecase.CheckInitializationStateUseCase
@@ -145,14 +144,12 @@ class MainViewModel @Inject constructor(
             when (val result = getInstalledMiniAppsUseCase()) {
                 is MiniAppResult.Success -> {
                     val miniAppsMap = result.data
-                    
-                    // 부산 월렛에서 사용하는 앱만 필터링
-                    val filteredApps = miniAppsMap.values.filter { app ->
-                        BusanConstants.BUSAN_APP_IDS.contains(app.appId)
-                    }
-                    
-                    val blockchainApps = filteredApps.filter { it.type == MiniAppType.BLOCKCHAIN }
-                    val regularApps = filteredApps.filter { it.type == MiniAppType.APP }
+
+                    // 모든 설치된 앱을 타입별로 분류 (필터링 제거)
+                    val allApps = miniAppsMap.values
+
+                    val blockchainApps = allApps.filter { it.type == MiniAppType.BLOCKCHAIN }
+                    val regularApps = allApps.filter { it.type == MiniAppType.APP }
                     
                     // 저장된 활성 블록체인 ID 복원 또는 첫 번째 블록체인 선택
                     val savedActiveId = getActiveBlockchainUseCase().first()
