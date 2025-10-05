@@ -1,10 +1,12 @@
 package com.busan.wallet.feature.hub.remote.model
 
+import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
 
 /**
  * Server response model for mini-app from Hub API
  */
+@Keep
 data class HubMiniAppResponse(
     @SerializedName("appId")
     val appId: String,

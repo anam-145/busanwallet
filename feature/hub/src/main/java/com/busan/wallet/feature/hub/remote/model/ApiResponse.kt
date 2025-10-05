@@ -1,10 +1,12 @@
 package com.busan.wallet.feature.hub.remote.model
 
+import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
 
 /**
  * Generic API response wrapper from Hub server
  */
+@Keep
 data class ApiResponse<T>(
     @SerializedName("success")
     val success: Boolean,
